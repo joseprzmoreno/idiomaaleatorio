@@ -17,6 +17,10 @@
         font-size: 60px;
         font-weight: bold;
     }
+    #numero {
+        font-size: 40px;
+        font-weight: gray;
+    }
 </style>
 
 <body>
@@ -24,6 +28,8 @@
 <button id="boton">Idioma aleatorio</button>
 <hr>
 <div id="resultado"></div>
+<hr>
+<div id="numero"></div>
 
 </body>
 <script>
@@ -99,8 +105,10 @@ function myFunction() {
             lengua = idiomas[i][0];
         }
     }
+   let y = Math.floor(Math.random()*100);
     
   document.getElementById('resultado').innerHTML = lengua;
+  document.getElementById('numero').innerHTML = y;
 }
 
 </script>
